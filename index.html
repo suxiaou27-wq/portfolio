@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>医院智能导诊 Agent 2.0｜模拟业务系统 API 接入验证</title>
-<meta name="description" content="医院智能导诊 Agent 2.0：从知识库问答到模拟医生排班 API 接入，展示业务分析、工具调用、风险控制与三类测试验证。学习验证环境，未接入真实医院系统。">
+<meta name="description" content="医院智能导诊 Agent 2.0：从知识库问答到模拟医生排班 API 接入，展示业务分析、工具调用、风险控制与四类 API 场景验证。学习验证环境，未接入真实医院系统。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -672,11 +672,21 @@ main{max-width:1290px;padding:0 38px}.sec{border:0;padding:0;margin:125px 0;scro
 @media(max-width:640px){.nav-inner{height:68px;padding:0 20px}.editorial-hero{padding:15px 16px 0}.hero-canvas{border-radius:28px;min-height:0}.hero-topline{padding:22px;font-size:8px}.editorial-title{font-size:clamp(94px,26vw,155px);padding:28px 20px 14px}.title-version{font-size:20px}.hero-canvas>.connection-art{left:0;width:150%;opacity:.5}.hero-bottom{grid-template-columns:1fr;padding:25px 24px 34px;gap:27px}.hero-bottom h2{font-size:27px}.hero-summary p{font-size:13px}.hero-caption{padding:16px 8px;gap:5px;font-size:10px}.editorial-hero .hero-stats{gap:10px;margin-top:20px}.hero-stat{display:flex;gap:22px;padding:12px 7px!important}.hero-stat .v{font-size:30px;min-width:86px}.hero-stat .l{font-size:12px}.hero-note{padding:0 7px;font-size:10px}main{padding:0 16px}.sec,#why{margin:80px 0;padding:0}.sec-head{padding:0 8px;margin-bottom:25px}.sec-title,#project .sec-title{font-size:28px}.sec-desc{font-size:14px}.chapter-body{padding:24px 20px;border-radius:28px}.sec-meta{margin-bottom:13px}.sec-no,.sec-label{font-size:10px}#why .sec-title{font-size:27px}#why .manifesto{padding:48px 18px;border-radius:30px;margin-bottom:30px}.manifesto>p{font-size:28px}.manifesto-note{font-size:10px}#why .rows{grid-template-columns:1fr;gap:20px;padding:0 8px}#why .row{padding:0}.project-editorial-grid{grid-template-columns:1fr;gap:20px}.project-art-tile{grid-row:auto;min-height:310px;border-radius:28px;padding:30px}.tile-title{font-size:46px}.project-editorial-grid .gitem,.project-editorial-grid .gitem:last-child{min-height:240px;border-radius:28px;padding:30px}.project-editorial-grid .gitem h3{font-size:24px}#project>.evidence-banner{padding:15px 8px;gap:18px}#project .evidence-number{font-size:36px}#project>.flow{grid-template-columns:1fr 1fr;gap:25px}.architecture-visual .api-diagram{grid-template-columns:1fr}.architecture-visual .system-zone{display:flex}.architecture-overlay{padding:22px}.architecture-label{font-size:28px}.architecture-copy h4{font-size:21px}.api-feature{margin:32px 0;padding:0}.api-feature>h3,.api-tests>h3{font-size:28px}.api-tests{padding:24px 18px;border-radius:23px}.result-tabs{gap:8px}.result-tab{padding:10px 12px;font-size:11px}.result-panel{grid-template-columns:1fr;gap:28px}.api-heading .status-chip{font-size:11px}.api-kicker{font-size:10px}.api-lead{font-size:14px}.chapter-body .gitem{padding:22px}.real-agent-run{padding:20px 15px}.prototype-bar{padding:0 12px}.agent-panel{padding:22px 16px}.chat-product-scroll{padding:22px 16px}.chat-product-head{padding:0 16px}.risk-step{padding:18px 8px}.risk-step .r-action{white-space:normal}.scope-card{padding:20px}.ab-table th,.ab-table td{padding:12px 7px;font-size:11px}#practice .practice-grid{grid-template-columns:1fr;gap:20px}#practice .practice:nth-child(even){transform:none}#practice .practice{padding:30px;border-radius:28px;min-height:220px}.final{padding:50px 22px;margin:80px 0 30px;border-radius:28px}.about{padding:30px 23px;border-radius:28px;margin-bottom:60px}.about-grid{gap:28px}.contact-line{flex-wrap:wrap}.hero-summary .btn{max-width:100%}.production-path{gap:15px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 
+#practice .practice-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+#practice .practice{height:100%}
+#practice .practice:nth-child(even){transform:none}
+@media(max-width:640px){#practice .practice-grid{grid-template-columns:1fr}}
+
 .api-proof{margin-top:54px;display:grid;grid-template-columns:.34fr 1fr;gap:34px;align-items:start;border-top:1px solid #343434;padding-top:24px}.api-proof figcaption{display:flex;flex-direction:column;gap:14px;padding-top:10px}.api-proof figcaption strong{font-size:clamp(24px,3vw,42px);font-weight:400;line-height:1.15;letter-spacing:-.04em}.api-proof figcaption span:last-child{font-size:13px;color:var(--muted);line-height:1.8}.api-proof-image{background:#f1f2f6;min-height:460px;display:flex;justify-content:center;overflow:hidden}.api-proof-image img{width:100%;height:auto;max-height:700px;object-fit:contain}.api-fallback-evidence{margin-top:58px;border-top:1px solid #343434;padding-top:30px;display:grid;grid-template-columns:.7fr 1.3fr;gap:38px}.fallback-copy h3{font-size:clamp(28px,3.4vw,48px);font-weight:400;line-height:1.15;margin:14px 0}.fallback-copy p{font-size:14px;line-height:1.9;color:var(--muted);max-width:430px}.fallback-line{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:28px;font-size:12px;color:#d5d7c8}.fallback-line span{color:#93886f}.fallback-images{display:grid;grid-template-columns:1fr 1fr;gap:18px}.fallback-images figure{margin:0;min-width:0}.fallback-images figcaption{font-family:var(--mono);font-size:10px;color:var(--faint);letter-spacing:.06em;margin-bottom:10px}.fallback-images img{display:block;width:100%;height:420px;object-fit:contain;background:#f1f2f6}.api-tests .result-tabs{display:flex;flex-wrap:wrap}
 @media(max-width:640px){.api-proof,.api-fallback-evidence{grid-template-columns:1fr;gap:22px}.api-proof{margin-top:38px}.api-proof-image{min-height:0}.api-fallback-evidence{margin-top:40px}.fallback-images{grid-template-columns:1fr}.fallback-images img{height:auto;max-height:520px}.fallback-line{line-height:1.8}}
 
 /* Final palette correction: retain the editorial layout, restore dark surfaces and light type. */
 body,footer{background:#020202;color:#f1f0e9}.bg-fade{background:#020202}nav{background:rgba(2,2,2,.92);border:0;color:#d8d8d0}nav .nav-links a{color:#b9bab2}nav .nav-links a:hover{background:#242421;color:#f1f0e9}nav .nav-links a.active{color:#f1f0e9}.nav-cta{background:#e8e7df;color:#111}.sec-title,#why .row h3{color:#f1f0e9}.sec-desc,#why .row p{color:#a0a0a0}footer{color:#a0a0a0}.foot-inner{border-top-color:#303030}.hero-stat .l{color:#a0a0a0}.hero-stat .v .accent{color:#e6e5dd}.hero-caption{color:#808080}.hero-note{color:#a0a0a0}.final .identity{color:#a0a0a0}.final .thin{color:#c7c8bd}
+#why .why-case-layout{display:grid;grid-template-columns:minmax(280px,.85fr) 1.5fr;gap:42px;align-items:start;border-top:1px solid var(--border-soft);padding-top:28px}#why .why-core h3{font-size:clamp(24px,3vw,40px);font-weight:400;line-height:1.25;margin:12px 0}#why .why-core h3 em{font-family:var(--serif);font-style:normal;color:var(--accent)}#why .why-core p{font-size:13px;line-height:1.8;color:var(--muted);max-width:360px}#why .why-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}#why .why-steps article{border-top:1px solid var(--border);padding-top:14px}#why .why-steps .idx{font-family:var(--mono);font-size:11px;color:var(--faint)}#why .why-steps h4{font-size:16px;font-weight:500;line-height:1.4;margin:16px 0 10px}#why .why-steps p{font-size:12px;line-height:1.75;color:var(--muted)}
+#problem .struct-flow{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 16px;border-top:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft)}#problem .struct-flow-node{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center;width:min(330px,100%);padding:12px 16px;border:1px solid var(--border);background:rgba(255,255,255,.025)}#problem .struct-flow-node .struct-flow-no{grid-row:span 2;font:11px var(--mono);color:var(--faint)}#problem .struct-flow-node b{font-size:15px;font-weight:500}#problem .struct-flow-node small{font-size:11px;color:var(--muted);margin-top:3px}#problem .struct-flow-node.final{border-color:#666;background:#161616}#problem .struct-flow-arrow{display:flex;flex-direction:column;align-items:center;color:var(--accent);font:18px var(--mono);line-height:1.1}#problem .struct-flow-arrow span{font:10px var(--mono);color:var(--faint);letter-spacing:.05em;margin-top:5px}#problem .struct-flow-branches{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:min(760px,100%)}#problem .struct-flow-branches>div{display:flex;flex-direction:column;gap:7px;min-width:0;padding:14px 12px;border:1px solid var(--border-soft);background:rgba(255,255,255,.018)}#problem .struct-flow-branches span{font:10px var(--mono);color:var(--faint)}#problem .struct-flow-branches b{font-size:13px;font-weight:500;line-height:1.4}#problem .struct-flow-branches small{font-size:10px;line-height:1.5;color:var(--muted)}
+@media(max-width:640px){#why .why-case-layout{grid-template-columns:1fr;gap:24px;padding-top:22px}#why .why-steps{grid-template-columns:1fr;gap:16px}#why .why-steps article{display:grid;grid-template-columns:35px 1fr;column-gap:10px;padding-top:12px}#why .why-steps .idx{grid-row:span 2}#why .why-steps h4{margin:0 0 5px}#problem .struct-flow{padding:18px 8px}#problem .struct-flow-branches{grid-template-columns:1fr!important;width:100%!important}#problem .struct-flow-branches>div{padding:11px 12px}}
+#problem .struct-flow{gap:6px}#problem .struct-flow-arrow{line-height:.85}#problem .struct-flow-arrow span{margin-top:2px}#problem .struct-flow-node{padding-top:10px;padding-bottom:10px}#problem .struct-flow-node + .struct-flow-arrow + .struct-flow-node.final{margin-top:-5px}
+@media(max-width:640px){#problem .struct-flow{gap:5px}#problem .struct-flow-node + .struct-flow-arrow + .struct-flow-node.final{margin-top:-3px}}
 </style>
 </head>
 <body>
@@ -708,9 +718,9 @@ body,footer{background:#020202;color:#f1f0e9}.bg-fade{background:#020202}nav{bac
   <div class="hero-stats reveal">
     <div class="hero-stat"><div class="v">3/10</div><div class="l">1.0 基线整体通过</div></div>
     <div class="hero-stat"><div class="v">9/10</div><div class="l">2.0 同题完整复测</div></div>
-    <div class="hero-stat"><div class="v">03<span class="accent"> / API</span></div><div class="l">可用 / 不可用 / 无记录 · 三类验证</div></div>
+    <div class="hero-stat"><div class="v">04<span class="accent"> / API</span></div><div class="l">可用 / 不可用 / 无记录 / 接口失效 · 四类场景验证</div></div>
   </div>
-  <div class="hero-note reveal">测试口径：原 10 条同题测试与本次 3 条排班测试分开记录，不合并计算通过率。</div>
+  <div class="hero-note reveal">测试口径：原 10 条同题测试与本次 4 类 API 场景验证分开记录，不合并计算通过率。</div>
 </header>
 
 <main>
@@ -778,22 +788,12 @@ body,footer{background:#020202;color:#f1f0e9}.bg-fade{background:#020202}nav{bac
       <div class="sec-meta"><span class="sec-no">02</span><span class="sec-label">Why AI</span></div>
       <h2 class="sec-title">我为什么开始做 AI 应用？</h2>
     </div>
-    <div class="manifesto reveal"><span class="api-kicker">MY APPROACH</span><p>从真实问题出发，<br>让 <em>AI</em> 进入工作流程。<br>把一次实践，<br>变成可以复用的能力。</p><span class="manifesto-note">发现问题 · 拆解流程 · 设计方案 · 验证结果</span></div>
-    <div class="rows reveal">
-      <div class="row">
-        <span class="idx">01</span>
-        <h3>不是从编程开始接触 AI</h3>
-        <p>我的专业是网络与新媒体，AI 对我的起点是工具，是能在真实工作里帮我解决问题的东西。</p>
-      </div>
-      <div class="row">
-        <span class="idx">02</span>
-        <h3>更关心三个问题</h3>
-        <p>哪些重复问题可以被解决？哪些流程可以被重新设计？AI 到底能不能真正进入工作场景？</p>
-      </div>
-      <div class="row">
-        <span class="idx">03</span>
-        <h3>从真实问题出发，而不是从工具出发</h3>
-        <p>先找到业务里真实存在的缺口，再去选工具、搭方案、验证效果。工具是为问题服务的。</p>
+    <div class="why-case-layout reveal">
+      <div class="why-core"><span class="api-kicker">CORE APPROACH</span><h3>从真实问题出发，<em>让 AI 进入工作流程。</em></h3><p>我关心的不是从工具开始，而是先发现业务里的重复问题，再判断哪些环节适合 AI。</p></div>
+      <div class="why-steps" aria-label="AI 应用实践路径">
+        <article><span class="idx">01</span><h4>发现重复问题</h4><p>观察真实工作场景，识别重复、标准化的咨询与流程。</p></article>
+        <article><span class="idx">02</span><h4>判断哪些环节适合 AI</h4><p>区分可自动回答的信息与必须由官方或人工处理的边界。</p></article>
+        <article><span class="idx">03</span><h4>设计方案并验证结果</h4><p>搭建知识库与 Agent，加入规则，再用测试反馈继续迭代。</p></article>
       </div>
     </div>
 
@@ -867,24 +867,24 @@ body,footer{background:#020202;color:#f1f0e9}.bg-fade{background:#020202}nav{bac
 
     <div class="data-block reveal">
       <div class="data-head"><h3>用户问题结构</h3><span>从后台私信观察中归纳</span></div>
-      <div class="struct">
-        <div class="struct-node">后台私信</div>
-        <div class="struct-line">大量问题属于重复性、标准化咨询</div>
-        <div class="struct-node">三类高频问题</div>
-        <div class="struct-branches">
-          <div class="struct-item"><span>01</span>医院基本信息</div>
-          <div class="struct-item"><span>02</span>科室信息</div>
-          <div class="struct-item"><span>03</span>医生信息</div>
+      <div class="struct-flow" aria-label="用户问题到 Agent 回答的信息架构">
+        <div class="struct-flow-node"><span class="struct-flow-no">01</span><b>后台私信</b><small>真实咨询入口</small></div>
+        <div class="struct-flow-arrow">↓ <span>归纳重复、标准化问题</span></div>
+        <div class="struct-flow-node"><span class="struct-flow-no">02</span><b>三类高频问题</b><small>按信息类型分流</small></div>
+        <div class="struct-flow-branches">
+          <div><span>01</span><b>医院基本信息</b><small>地址 · 流程 · 挂号</small></div>
+          <div><span>02</span><b>科室信息</b><small>位置 · 擅长 · 口语表达</small></div>
+          <div><span>03</span><b>医生信息</b><small>介绍 · 科室 · 出诊参考</small></div>
         </div>
-        <div class="struct-line">按三类问题分别构建</div>
-        <div class="struct-node">知识库三张表</div>
-        <div class="struct-line">支撑 Agent 自动回答</div>
-        <div class="struct-node">Agent 回答</div>
+        <div class="struct-flow-arrow">↓ <span>分别结构化整理</span></div>
+        <div class="struct-flow-node"><span class="struct-flow-no">03</span><b>三类结构化知识库</b><small>支撑检索与判断</small></div>
+        <div class="struct-flow-arrow">↓</div>
+        <div class="struct-flow-node final"><span class="struct-flow-no">04</span><b>Agent 回答</b><small>基于信息来源组织回复</small></div>
       </div>
       <div class="data-src">说明：问题归纳基于后台私信观察与进一步梳理，非逐条统计结果</div>
     </div>
 
-    <div class="quote reveal">后台存在不少重复性、常见问题，患者需要的是即时响应，而不是等待人工回复。<span class="q-src">结论：这类咨询适合交给 AI 自动回答</span></div>
+    <div class="quote reveal">后台存在不少重复性、常见问题，患者需要的是即时响应，而不是等待人工回复。<span class="q-src">结论：其中重复、低风险、标准化咨询适合由 AI 辅助承接</span></div>
       </div>
   </section>
 
@@ -1278,7 +1278,7 @@ body,footer{background:#020202;color:#f1f0e9}.bg-fade{background:#020202}nav{bac
       <div class="scope-card">
         <span class="scope-label">PROJECT SCOPE</span><h3>项目证据边界</h3>
         <div class="scope-grid">
-          <p><b>已经完成：</b>个人自主业务原型；公开医院信息知识库；基于常见咨询类型重新编写的模拟测试；1.0、2.0 完整对照；Prompt A/B 控制变量测试与异常案例定向复测；模拟医生排班 API、Coze 工具接入与三类排班测试。</p>
+          <p><b>已经完成：</b>个人自主业务原型；公开医院信息知识库；基于常见咨询类型重新编写的模拟测试；1.0、2.0 完整对照；Prompt A/B 控制变量测试与异常案例定向复测；模拟医生排班 API、Coze 工具接入、三类排班结果验证及一类接口失效兜底测试。</p>
           <p><b>尚未完成：</b>真实 HIS、挂号与实时排班系统、医院真人客服、生产环境部署与真实患者运营数据。项目不包含患者个人隐私信息。</p>
         </div>
       </div>
